@@ -2,14 +2,33 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Playground - JavaScript 101</title>
+    <title>OMDb API</title>
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.css">
   </head>
   <body>
-    <p style="margin-top: 40vh; text-align: center; font: normal 24px monospace;">
-      Open the console 🤓
-    </p>
 
-    <!-- Add some HTML in here -->
+    <select class="select2" name="country">
+      <option value="AL">Alabama</option>
+      <option value="WY">Wyoming</option>
+      <option value="AL">Alabama2</option>
+      <option value="WY">Wyoming2</option>
+      <option value="AL">Colorado</option>
+      <option value="WY">New York</option>
+    </select>
+
+    <textarea class="form-control" id="editor" rows="4"></textarea>
+    <div id="preview"></div>
+
+    <div class="container text-center">
+      <form class="form-inline" id="search-form">
+        <input type="text" class="form-control" placeholder="Find movie" id="search-input">
+        <input type="submit" class="btn btn-primary">
+      </form>
+      <ul id="results" class="list-inline"></ul>
+    </div>
 
     <script src="main.js"></script>
   </body>
